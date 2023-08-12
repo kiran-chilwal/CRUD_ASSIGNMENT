@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="main-container" class="main-container">
+        <div class="container">
+            <div class="team-selection">
+                <h1>Team Members</h1>
+                <div class="add-member">Add Members
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <hr>
+            <div id="filterContainer" class="select-company margin-top20">
+                <div class="wrapper">
+                    <div data-flag="show" class="form-control toggle-next ellipsis">Company ()</div>
+                    <div class="checkboxes">
+                        <div id="companyList" class="inner-wrap">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div id="statusContainer" data-order="asc" class="margin-top20">
+                <span>Status</span>
+                <div id="statusOrderArrowContainer">
+                </div>
+            </div>
+            <div>
+                <div class="main">
+                    <table id="members-table">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <div id="modal-deleConfirmation" class="displayNone">
+        <div class="modal-headerContainer">
+            <span class="crossDeleteModal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+        <div class="modal-bodyContainer">
+            <span>Do you really wants to delete?</span>
+        </div>
+        <div class="modal-footerContainer">
+            <div><button class="saveCancelBtnStyle" id="modal-cancelBtn">No</button></div>
+            <div><button class="saveCancelBtnStyle" id="modal-deleteBtn">Yes</button></div>
+        </div>
+    </div>
+    <div id="modal-sec" class="modal">
+
+        <div class="modal-content">
+                <span class="cross">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            <h2 class="">
+                Add members
+            </h2>
+            <form action="#" class="modal-form">
+                <label for="Name">Name</label><br>
+                <input type="text" id="Name" name="name" value="" required><br>
+                <label for="Company">Company</label><br>
+                <input type="text" id="Company" name="company" value="" required><br>
+                <label for="Status">Status</label><br>
+                <input type="text" id="Status" name="status" value="" required><br>
+                <label for="Notes">Notes</label><br>
+                <input type="text" id="Notes" name="notes" value="" required><br>
+                <div class="button-container">
+                    <div id="submitCancel" type="button" value="cancel" class="common-btn cancel_btn">cancel</div>
+                    <button type="submit" value="save" class="common-btn save-btn">save</button>
+                </div>
+            </form>
+        </div>
+
+    </div>    
+
+<!-- multiple dropdown  -->
+    <div class="main-wrapper">
+        
+    </div>
+    <!-- js script link -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

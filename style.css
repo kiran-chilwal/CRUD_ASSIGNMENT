@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-container,.team-selection,.team-selection>div,.modal-container,.button-container{
+    display: flex;
+}
+.main-container{
+    justify-content: center;
+}
+.container{
+    width: 70%;
+}
+.team-selection{
+    align-items: center;  
+}
+.team-selection>div{
+    color: white;
+    background-color: #0080ff;
+    height: 35px;
+    border-radius: 15px;
+    /* display: flex; */
+    justify-content: space-evenly;
+    width: 124px;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.team-selection h1{
+    font-size: 40px;
+}
+.select-company select,.modal-content span{
+    text-align: center;
+
+}
+.select-company select{
+    height: 40px;
+    border-color: gainsboro;
+}
+table{
+    width: 100%;
+    margin:20px 0;
+    border-collapse: collapse;
+}
+table td,tr,th{
+    text-align: start;
+}
+/* modal css */
+.modal{
+    width: 50%;
+    background-color: white;
+    display: none;
+    margin: 0 auto;
+    height: 395px;
+    position: absolute;
+    left: 325px;
+    bottom: 154px;
+}
+.modal input{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 35px;
+}
+.overlay{
+    position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -0.5;
+  cursor: pointer;
+}
+.modal h2{
+    padding: 20px 0;
+}
+.modal-container{
+    justify-content: center;
+}
+.modal-content{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+.common-btn{
+    border-radius:15px ;
+    height: 25px;
+    width: 70px;
+    border:1px solid #0080ff;    
+    margin: 0 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-btn{
+    background-color: #0080ff;
+    border: none;
+}
+.button-container{
+    justify-content: end;
+}
+.modal-content span{
+cursor: pointer;
+line-height: 30px;
+margin: 0;
+padding: 0;
+position: absolute;
+top: 0px;
+right: 0px;
+}
+.clsMemberId{
+    display: none;
+}
+table tr{
+    height: 40px;
+}
+.row-style{
+    background-color:#F8F8F8;
+}
+.shadow-box{
+    width: 20px;
+    background-color: gray;
+}
+#statusContainer{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    width: 65px;
+    position: absolute;
+    top: 46px;
+    left: 360px;
+}
+#filterContainer{
+    width: 130px;
+}
+#statusOrderArrowContainer{
+    width:20px;
+    background-image: url("./sort.png");
+    height: 20px;
+    background-size: contain;
+}
+.cross,.deleteMember,#submitCancel{
+    cursor: pointer;
+}
+
+
+
+
+
+/* multiple dropdown  */
+.toggle-next {
+    border-radius: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;    
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.apply-selection {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ajax-link {
+    /* display: none; */
+}
+
+.checkboxes {
+    margin: 0;
+    /* display: none; */
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+
+.inner-wrap {
+    padding: 5px 10px;
+    max-height: 140px;
+    overflow: auto;
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+.margin-top20{
+    margin-top: 20px;
+}
+.wrapper{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+}
+.main{
+    margin-top: 60px;
+}
+.companyListLbl{
+    margin-left: 5px;
+}
+#modal-deleConfirmation{
+    width: 35%;
+    height: 131px;
+    position: absolute;
+    top: 110px;
+    right: 469px;
+    background-color: white;
+    border-radius: 15px;
+}
+.modal-headerContainer{
+display: flex;
+justify-content: flex-end;
+height: 20%;
+}
+.modal-footerContainer{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+.modal-bodyContainer{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+}
+.saveCancelBtnStyle{
+    border-radius: 15px;
+    height: 25px;
+    width: 70px;
+    border: 1px solid #0080ff;
+    margin: 0 5px;
+    text-align: center;
+}
+.crossDeleteModal{
+    width: 20px;
+}
